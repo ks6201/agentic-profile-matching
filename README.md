@@ -101,6 +101,8 @@ DATABASE_PORT=5432
 * Update `DATABASE_HOST` if using Docker or a remote database.
 * Default PostgreSQL port is `5432` unless configured otherwise.
 * The application and Alembic both depend on these values.
+* Install pgvector for your postgres version using this command on debian `sudo apt install postgresql-<version>-pgvector`
+* Enable pgvector extension using this `CREATE EXTENSION IF NOT EXISTS vector;`
 
 ---
 
